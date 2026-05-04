@@ -4,10 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>个人简介</title>
+  <style>
+    body {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f0f0f0;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .skills li::before {
+      content: "\2605";
+      margin-right: 8px;
+      color: #f5a623;
+    }
+
+    .skills li {
+      list-style: none;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>小明</h1>
+    <img src="https://via.placeholder.com/150" alt="个人照片" width="150" height="150">
   </header>
 
   <section>
@@ -23,7 +56,7 @@
 
   <section>
     <h2>技能</h2>
-    <ul>
+    <ul class="skills">
       <li>HTML5 / CSS3</li>
       <li>JavaScript (ES6+)</li>
       <li>React / Vue.js</li>
