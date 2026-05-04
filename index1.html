@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>食谱卡片</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fef6e4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .recipe-card {
+      max-width: 400px;
+      background-color: #f5f5f5;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .recipe-image {
+      width: 100%;
+      height: 260px;
+      overflow: hidden;
+    }
+
+    .recipe-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px 16px 0 0;
+    }
+
+    .recipe-body {
+      padding: 24px 28px 32px;
+    }
+
+    .recipe-title {
+      font-size: 24px;
+      line-height: 1.3;
+      color: #2d3436;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #fdcb6e;
+    }
+
+    .recipe-section {
+      margin-bottom: 32px;
+    }
+
+    .recipe-section h3 {
+      font-size: 17px;
+      line-height: 1.4;
+      color: #e17055;
+      margin-bottom: 10px;
+    }
+
+    .ingredients-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .ingredients-list li {
+      font-size: 15px;
+      line-height: 1.6;
+      padding: 6px 0;
+      border-bottom: 1px dashed #dfe6e9;
+      color: #555;
+    }
+
+    .ingredients-list li::before {
+      content: "\2615";
+      margin-right: 8px;
+    }
+
+    .steps-list {
+      padding-left: 20px;
+    }
+
+    .steps-list li {
+      font-size: 15px;
+      line-height: 1.7;
+      padding: 8px 0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="recipe-card">
+    <div class="recipe-image">
+      <img src="https://images.unsplash.com/photo-1599084993091-1cb5c0721d78?w=480&h=260&fit=crop" alt="香煎三文鱼">
+    </div>
+
+    <div class="recipe-body">
+      <h2 class="recipe-title">香煎三文鱼</h2>
+
+      <div class="recipe-section">
+        <h3>配料</h3>
+        <ul class="ingredients-list">
+          <li>三文鱼 200g</li>
+          <li>柠檬 半个</li>
+          <li>橄榄油 适量</li>
+          <li>盐 少许</li>
+          <li>黑胡椒 适量</li>
+        </ul>
+      </div>
+
+      <div class="recipe-section">
+        <h3>制作步骤</h3>
+        <ol class="steps-list">
+          <li>三文鱼腌制：用盐、黑胡椒和柠檬汁涂抹鱼身，腌制 10 分钟。</li>
+          <li>锅中倒入橄榄油，中火烧热，放入三文鱼，煎至两面金黄。</li>
+          <li>出锅装盘，挤上剩余柠檬汁即可享用。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
